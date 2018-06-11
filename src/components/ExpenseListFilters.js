@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { setTextFilter,sortByDate,sortByAmount } from '../actions/filters'
-
+// We have access to dispatch too as props
 const ExpenseListFilters = (props) => (
 		<div>
 			<input type="text" value={props.filters.text} onChange={(e) => {

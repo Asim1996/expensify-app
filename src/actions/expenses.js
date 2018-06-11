@@ -1,3 +1,4 @@
+// Action generators for expenses
 import uuid from 'uuid'; 
 
 export const addExpense = (

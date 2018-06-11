@@ -1,4 +1,4 @@
-
+// Query data from store
 // Get visible expenses
 export default (expenses, {text, sortBy, startDate, endDate}) => {
 	return expenses.filter((expense) =>{
@@ -9,7 +9,9 @@ export default (expenses, {text, sortBy, startDate, endDate}) => {
 		return startDateMatch && endDateMatch && textMatch;
 	}).sort((a,b) =>{
 		if(sortBy==='date'){
+			// 1 means b comes first
 			return a.createdAt < b.createdAt ? 1 : -1;
+
 		}
 		else if(sortBy==='amount'){
 			return a.amount < b.amount ? 1:-1;
