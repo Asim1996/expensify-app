@@ -14,3 +14,5 @@ const AddExpensePage =(props) =>(
 	</div>
 	)
 export default connect()(AddExpensePage);
+
+/*To get access to dispatch connect is used*/
