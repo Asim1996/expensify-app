@@ -8,6 +8,7 @@
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
     "start": "node server/server.js",
+    "test":"jest",
     "heroku-postbuild": "yarn run build:prod"
   },
   "dependencies": {
