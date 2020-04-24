@@ -17,18 +17,19 @@ console.log(store.getState());
 store.dispatch(addExpense({description:'Gas bill',createdAt:1000}))
 store.dispatch(addExpense({description:'Rent',amount:109500}))
 
-// console.log(store.getState());
-// store.dispatch(setTextFilter('water'));
-// setTimeout(() => {
-// 	store.dispatch(setTextFilter('bill'));
-// },3000)
-// console.log(store.getState());
- // store.subscribe(() => {
+console.log(store.getState());
+store.dispatch(setTextFilter('water'));
+setTimeout(() => {
+	store.dispatch(setTextFilter('bill'));
+},3000)
+console.log(store.getState());
+ store.subscribe(() => {
 	const state=store.getState();
+	console.log(state);
 	const visibleExpenses=getVisibleExpenses(state.expenses,state.filters);
    console.log(visibleExpenses); 
-// });
-// console.log(store.getState());
+});
+console.log(store.getState());
 const jsx = (
 	<Provider store={store}>
 	<AppRouter />
