@@ -10,10 +10,10 @@ const config = {
     appId: process.env.REACT_APP_APPID,
     measurementId: process.env.REACT_APP_MEASUREMENTID
   };
-console.log(config);
   firebase.initializeApp(config);
  const database = firebase.database();
- export {firebase, database as default }; 
+ const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
+ export {firebase, googleAuthProvider,  database as default }; 
   //reference to root of our database
 //   firebase.database().ref().set({
 //       name:"Asim",
