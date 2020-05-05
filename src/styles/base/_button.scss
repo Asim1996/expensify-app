@@ -7,3 +7,19 @@
     border-radius: $s-size;
     font-weight: 300;;
 }
+
+.button{
+    background: blue;
+    border: none;
+    color:white;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: $s-size;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.button--link{
+    background: none;
+}

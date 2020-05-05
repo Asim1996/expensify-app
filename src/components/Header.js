@@ -10,7 +10,7 @@ const Header = (props) => {
 					<Link to="/" exact={true} className="header__title">
 						<h1>Expensify App</h1>
 					</Link>
-					<button onClick={() => { props.dispatch(startLogout()) }}>Logout</button>
+					<button className="button button--link" onClick={() => { props.dispatch(startLogout()) }}>Logout</button>
 				</div>
 			</div>
 		</header>
