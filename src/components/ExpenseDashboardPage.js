@@ -6,7 +6,7 @@ const ExpenseDashboardPage =() =>(
 	<div>
 	<ExpensesSummary />
 	<ExpenseListFilters />
-	<ExpensesSummary />
+	{/* <ExpensesSummary /> */}
 	<ExpenseList/>
 	</div>
 	)

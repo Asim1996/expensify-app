@@ -9,7 +9,7 @@
 }
 
 .button{
-    background: blue;
+    background:$blue;
     border: none;
     color:white;
     display: inline-block;
@@ -22,4 +22,8 @@
 
 .button--link{
     background: none;
+}
+
+.button--secondary{
+    background: #888;
 }

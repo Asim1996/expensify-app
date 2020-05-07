@@ -27,13 +27,13 @@ class  ExpenseListFilters extends Component{
 			<div className="content-container">
 			<div className="input-group">
 				<div className="input-group__item">
-			<input type="text" value={this.props.filters.text} onChange={(e) => {
+			<input type="text" placeholder="Search Expenses" className="text-input" value={this.props.filters.text} onChange={(e) => {
 				this.props.dispatch(setTextFilter(e.target.value))
 				
 			}}/>
 			</div>
 			<div className="input-group__item">
-			<select value={this.props.filters.sortBy}  onChange={(e) => {
+			<select className="select" value={this.props.filters.sortBy}  onChange={(e) => {
 				e.target.value==='amount'? this.props.dispatch(sortByAmount()):this.props.dispatch(sortByDate())
 			}}>
 				<option value="date">Date</option>
